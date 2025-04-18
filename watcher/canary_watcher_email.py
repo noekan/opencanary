@@ -5,16 +5,16 @@ from email.message import EmailMessage
 from collections import defaultdict
 
 # === CONFIGURATION ===
-HONEYPOT_NAME         = "Telcomex"
+HONEYPOT_NAME         = "xxx"
 LOG_PATH              = "/var/tmp/opencanary.log"
 
-EMAIL_FROM            = "honeypot@telcomex.ch"
-EMAIL_TO              = ["nkanzallah@telcomex-ics.ch"]
+EMAIL_FROM            = "email"
+EMAIL_TO              = ["email"]
 EMAIL_SUBJECT         = "OpenCanary Alert"
-SMTP_HOST             = "smtpauth.x-secure.ch"
+SMTP_HOST             = "smtp"
 SMTP_PORT             = 587
-SMTP_USER             = "honeypot@telcomex.ch"
-SMTP_PASSWORD         = "zN1x2cXHxN9t"
+SMTP_USER             = "email"
+SMTP_PASSWORD         = "pass"
 
 ALERT_THRESHOLD       = 3     # Nombre de tentatives avant alerte
 NOTIFICATION_COOLDOWN = 120   # En secondes
