@@ -1,0 +1,20 @@
+---
+services:
+  opencanary:
+    container_name: opencanary
+    image: opencanary
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    network_mode: host
+    volumes:
+      - ./data/opencanary.conf:/root/.opencanary.conf
+      - ./log:/var/tmp
+
+  python-watcher:
+    build: ./watcher
+    container_name: canary-watcher
+    volumes:
+      - ./log:/var/tmp
+    restart: always
