@@ -7,7 +7,7 @@ from collections import defaultdict
 HONEYPOT_NAME         = "Telcomex"
 LOG_PATH              = "/var/tmp/opencanary.log"
 
-WEBHOOK_URL           = "webhookhttps://prod-01.switzerlandnorth.logic.azure.com:443/workflows/6f5c73a04c334eb4b5bc4880ccd2bf0d/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=bT27kgARjN3BwzLeIzoKbNfWlxuNRV-WJad3y3xL58w"
+WEBHOOK_URL           = ""
 
 ALERT_THRESHOLD       = 3     # Nombre de tentatives avant alerte
 NOTIFICATION_COOLDOWN = 60   # En secondes
