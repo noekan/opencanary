@@ -4,10 +4,10 @@ import requests
 from collections import defaultdict
 
 # === CONFIGURATION ===
-HONEYPOT_NAME         = "Telcomex"
+HONEYPOT_NAME         = "nom"
 LOG_PATH              = "/var/tmp/opencanary.log"
 
-WEBHOOK_URL           = ""
+WEBHOOK_URL           = "url"
 
 ALERT_THRESHOLD       = 3     # Nombre de tentatives avant alerte
 NOTIFICATION_COOLDOWN = 60   # En secondes
